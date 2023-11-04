@@ -1,9 +1,9 @@
+import { VehicleModule } from './vehicle/vehicle.module';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { DebugElement } from '@angular/core';
 import { AppComponent } from './app.component';
-import { VehiculoModule } from './vehiculo/vehiculo.module';
 import { By } from '@angular/platform-browser';
 
 describe('AppComponent', () => {
@@ -11,7 +11,7 @@ describe('AppComponent', () => {
   let debug: DebugElement;
   beforeEach(() =>
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule, HttpClientTestingModule, VehiculoModule],
+      imports: [RouterTestingModule, HttpClientTestingModule, VehicleModule],
       declarations: [AppComponent],
     })
   );

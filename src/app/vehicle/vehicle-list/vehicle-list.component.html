@@ -1,0 +1,28 @@
+<div class="container"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-7">
+      <table id="vehicle-table" class="table">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Línea</th>
+            <th scope="col">Modelo</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr *ngFor="let vehiculo of getVehicles()">
+            <td>
+              <strong>{{ vehiculo.id }}</strong>
+            </td>
+            <td>{{ vehiculo.marca }}</td>
+            <td>{{ vehiculo.linea }}</td>
+            <td>{{ vehiculo.modelo }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
