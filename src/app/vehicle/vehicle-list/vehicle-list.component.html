@@ -23,6 +23,14 @@
           </tr>
         </tbody>
       </table>
+      <div id="total-vehicles">
+        <div
+          id="{{ recipient.key }}"
+          *ngFor="let recipient of getMapListOfVehicles() | keyvalue"
+        >
+          <span> Total {{ recipient.key }} : {{ recipient.value }} </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

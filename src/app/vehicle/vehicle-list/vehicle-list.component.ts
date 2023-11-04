@@ -18,6 +18,13 @@ export class VehicleListComponent implements OnInit {
     });
   }
 
+  getMapListOfVehicles() {
+    return this.vehicles.reduce(function (r: any, a: Vehicle) {
+      r[a.marca] = (r[a.marca] || 0) + 1;
+      return r;
+    }, {});
+  }
+
   getVehicles() {
     return this.vehicles;
   }
